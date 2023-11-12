@@ -16,6 +16,7 @@ RUN apt-get update \
         colord \
         printer-driver-all \
         printer-driver-gutenprint \
+        printer-driver-brlaser \
         openprinting-ppds \
         hpijs-ppds \
         hp-ppd  \
@@ -28,6 +29,7 @@ RUN apt-get update \
         samba \
         bash-completion \
         procps \
+    && apt-get dist-upgrade -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
